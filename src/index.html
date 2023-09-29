@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="header">
-      <form action="submit">
+      <form action="submit" class="header_form">
         <input
           type="text"
           placeholder="Enter your city"
@@ -20,25 +20,32 @@
       </form>
     </header>
     <main class="main">
+      <!-- <div class="big_city_card">
+        <div class="city_item_title_wrapper">
+            <h2 class="big_city_card_title">Kyiv</h2>
+            <div class="circle_big"></div>
+            <img class="circle" src="" alt="weather icon">
+          </div>
+          <div class="big_city_card_country_wrapper"><h3 class="big_city_card_country">Ukraine</h3>
+                  <p class="big_city_card_condition">Sunny</p></div>
+            <div class="big_city_card_wrapper_bottom"> 
+          <div class="big_city_card_wrapper_text">
+            <p class="big_city_card_text">Wind: 21 kph</p>
+            <p class="big_city_card_text">Pressure: 1123 mb</p>
+            <p class="big_city_card_text">Humidity: 63%</p>
+            <p class="big_city_card_text">Wind direction: SW</p>
+            <p class="big_city_card_text">Gust: 22 kph</p>
+            <p class="big_city_card_text">UV: 2</p>
+        `  </div>
+         <div class="big_city_card_temp_wrapper">  
+                 <h3 class="big_city_card_temp_title">32C&#176;</h3>
+          <p class="big_city_card_real_feel">Real feel 34C&#176</p></div>
+      </div>     
+      </div> -->
       <ul class="city_list">
         <li class="city_item">
           <div class="front" data-city="1"></div>
-          <!-- <div class="city_item_title_wrapper">
-            <h2 class="city_item_title">Kyiv</h2>
-            <div class="circle"></div>
-          </div>
-          <h3 class="city_item_temp_title">32C&#176;</h3>
-          <div class="city_item_text_wrapper">
-            <p class="city_item_text">Wind: 21 kph</p>
-            <p class="city_item_text">Pressure: 1121 mb</p>
-          </div> -->
-          <div class="back" data-city="21">
-            <!-- <div class="content">
-              <p class="content_text">Text</p>
-              <p class="content_text">Text</p>
-              <p class="content_text">Text</p>
-            </div> -->
-          </div>
+          <div class="back" data-city="21"></div>
         </li>
         <li class="city_item">
           <div class="front" data-city="2"></div>
@@ -81,6 +88,28 @@
           <li class="footer_list_item_favourite">Lissabon</li>
         </ul>
       </div>
+      <form action="submit" class="footer_form">
+        <label class="footer_input_label">
+          City
+          <input
+            class="footer_input"
+            name="footer_input"
+            type="text"
+            placeholder="Enter your city"
+          />
+        </label>
+        <div class="footer_select_wrapper">
+          <label class="footer_input_label">
+            Days
+            <select class="footer_select" name="footer_select">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </label>
+          <button class="footer_form_btn">Get the weather</button>
+        </div>
+      </form>
     </footer>
   </body>
 </html>
