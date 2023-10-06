@@ -59,7 +59,7 @@ const getCityWeather = async (query) => {
     const API_KEY = "53d51b3de44f43c5a8f183833232309"
 
   
-        const resp = await fetch(`${BASE_URL}?key=${API_KEY}&q=${query}`)
+        const resp = await fetch(`${BASE_URL}?key=${API_KEY}&q=${query}`,{mode: "no-cors"})
         if (!resp.ok) {
             throw new Error(resp.statusText)
         }
